@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="tip.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="box">
+            <h3 class="title">Tip Calculator</h3>
+            <hr>
+            <div class="amountbox">
+                <label for="">Bill Amount</label> <br>
+                <button class="btn"><i class="fas fa-rupee-sign"></i></button><input type="number" id="billAmount"
+                    class="value"> <br>
+            </div>
+
+            <div class="peoplebox">
+                <label for="">Number of Guests</label> <br>
+                <button class="btn"><i class="fas fa-users"></i></button><input type="nuber" id="numberofGuests"
+                    class="value"> <br>
+            </div>
+
+            <div class="option">
+                <label for="">Service Quality</label> <br>
+                <select name="" id="quality"
+                    style="width: 100%; height: 30px; border: 1px solid gray;border-radius: 5px;">
+                    <option value="">Choose...</option>
+                    <option value="0.3">30%-Outstanding</option>
+                    <option value="0.2">20%-Good</option>
+                    <option value="0.15">15%-It was ok</option>
+                    <option value="0.1">10%-Bad</option>
+                    <option value="0.05">5%-Terrible</option>
+                </select>
+            </div>
+            <hr>
+
+            <div class="cal">
+                <button id="calculate">Calculate</button>
+            </div>
+        </div>
+
+        <div id="youramount">
+            <p id="youbill"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
